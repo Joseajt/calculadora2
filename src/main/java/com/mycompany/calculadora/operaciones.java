@@ -4,16 +4,13 @@
  */
 package com.mycompany.calculadora;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author josej
  */
-public class operaciones {
-     //ATRIBUTOS DE NUESTRA CLASE
-    int num1;
-    int num2;
+public class operaciones {   
+ //ATRIBUTOS DE NUESTRA CLASE
+ 
     int suma;
     int resta;
     int multiplicacion;
@@ -21,25 +18,20 @@ public class operaciones {
     int modulo;
     
     //METODOS
-    public void leerNumeros(){
-    num1=Integer.parseInt(JOptionPane.showInputDialog("Coloca el numero 1: "));
-    num2=Integer.parseInt(JOptionPane.showInputDialog("Coloca el numero 2: "));
+    public void suma(int numero1, int numero2){
+    suma=numero1+numero2;
     }
-    
-    public void suma(){
-    suma=num1+num2;
+    public void resta(int numero1, int numero2){
+    resta=numero1-numero2;
     }
-    public void resta(){
-    resta=num1-num2;
+    public void multiplicacion(int numero1, int numero2){
+    multiplicacion=numero1*numero2;
     }
-    public void multiplicacion(){
-    multiplicacion=num1*num2;
+    public void division(int numero1, int numero2){
+    division=numero1/numero2;
     }
-    public void division(){
-    division=num1/num2;
-    }
-    public void modulo(){
-    modulo=num1%num2;
+    public void modulo(int numero1, int numero2){
+    modulo=numero1%numero2;
     }
     public void mostrarResultados(){
     System.out.println("El resultado de la suma es: "+suma);

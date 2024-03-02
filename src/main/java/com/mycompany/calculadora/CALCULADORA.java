@@ -12,13 +12,16 @@ import javax.swing.JOptionPane;
 public class CALCULADORA {
 
     public static void main(String[] args) {
-         operaciones ope1= new operaciones ();
-        ope1.leerNumeros();
-        ope1.suma();
-        ope1.resta();
-        ope1.multiplicacion();
-        ope1.division();
-        ope1.modulo();
-        ope1.mostrarResultados();
+      int n1= Integer.parseInt(JOptionPane.showInputDialog("Digite el numero 1"));
+        int n2= Integer.parseInt(JOptionPane.showInputDialog("Digite el numero 2"));
+        
+        operaciones op = new operaciones();
+        op.suma(n1,n2);
+        op.resta(n1,n2);
+        op.multiplicacion(n1,n2);
+        op.division(n1,n2);
+        op.modulo(n1,n2);
+        op.mostrarResultados();
     }
+    
 }
